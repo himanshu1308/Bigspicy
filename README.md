@@ -44,4 +44,4 @@ To specify the location of the final.pb file, go to bigspicy.py file and search 
 
 ## Aknowledgements
 * Kunal Ghosh, Director, VSD corporation pvt. Ltd.
-* Himanshu Rai , MS VLSI, Student IIT Bangalore .
+* Himanshu Rai , Research Scholar IIT Bangalore .
