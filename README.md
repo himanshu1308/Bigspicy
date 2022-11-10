@@ -14,13 +14,29 @@ pip install -e ".[dev]"
 pip install -r requirements.txt
 sudo apt install -y protobuf-compiler iverilog
 ```
-
-
-
-
-
+4.  Another prerequisite for this step is compiling the protobufs into python file .(_pb2.py).
+  To compile the protobufs just type following commands
+```
+git submodule update --init  
+protoc --proto_path vlsir vlsir/*.proto vlsir/*/*.proto --python_out=.
+protoc proto/*.proto --python_out=.
+```
 
 ## Merging 
+You can merge the files into circuit protobuf (final.pb) which is used in all the next steps in the complete flow. To do this just run the following commands :
+```
+./bigspicy.py \
+    --import \
+    --verilog iiitb_pwmgen/iiitb_pwmgensynth.v \
+    --spef iiitb_pwmgen/iiitb_pwmgen.spef \
+    --spice_header lib/sky130_fd_sc_hd.spice \
+    --top iiitb_pwmgen \
+    --save final.pb \
+    --working_dir /tmp/bigspicy
+```
+This will generate final.pb file 
+To specify the location of the final.pb file, go to bigspicy.py file and search for "def withoptions()" function. Change the "working_directory" variable to your desired path.
+
 
 
 
@@ -28,4 +44,4 @@ sudo apt install -y protobuf-compiler iverilog
 
 ## Aknowledgements
 * Kunal Ghosh, Director, VSD corporation pvt. Ltd.
-* Himanshu Rai , MS VLSI student IIT Bangalore 
+* Himanshu Rai , MS VLSI, Student IIT Bangalore .
