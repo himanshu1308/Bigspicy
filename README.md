@@ -1,5 +1,6 @@
 # Bigspicy
-In this repo I have shown the detailed step for merging SPEF,Verilog and spice information into circuit Protobuf which is needed in all the next step to proceed with the complete flow. I have done it for my design pwm generator. I have completed RTL to GDS flow and you can refer my github repo for this. https://github.com/himanshu1308/iiitb_pwm.git
+In this repo I have shown the detailed step for merging SPEF,Verilog and spice information into circuit Protobuf which is needed in all the next step to proceed with the complete flow. I have done it for my design pwm generator. I have completed RTL to GDS flow and you can refer my github repo for this. https://github.com/himanshu1308/iiitb_pwm.git. 
+Official github repo of BigSpicy: https://github.com/google/bigspicy.git
 
 ## Flowchart
 
@@ -26,6 +27,7 @@ protoc proto/*.proto --python_out=.
 ```
 We also need XYCE  and XDM tool. It can be downloaded  from the following links:
 XYCE:https://xyce.sandia.gov/documentation/BuildingGuide.html
+
 XDM: https://github.com/Xyce/XDM
 
 ## Converting PDKs
