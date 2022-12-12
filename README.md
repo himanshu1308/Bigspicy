@@ -1,5 +1,5 @@
 # Bigspicy
-In this repo I have shown the detailed step for merging SPEF,Verilog and spice information into circuit Protobuf which is needed in all the next step to proceed with the complete flow. I have done it for my design pwm generator. I have completed RTL to GDS flow and you can refer my github repo for this. https://github.com/himanshu1308/iiitb_pwm.git. 
+This repo shows the steps for merging the SPEF, verilog and spice netlist into a circuit protobuf and generating the spice file of the design which can further be used to perform various tests and analysis. I have done it for my design pwm generator and I have completed it's RTL to GDS flow and you can refer my github repo for this. https://github.com/himanshu1308/iiitb_pwm.git
 Official github repo of BigSpicy: https://github.com/google/bigspicy.git
 
 ## Flowchart
